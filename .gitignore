@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+# Jupyter
+.ipynb_checkpoints/
+# Data (large / private)
+*.csv
+*.xls
+*.xlsx
+# OS
+.DS_Store
+Thumbs.db
