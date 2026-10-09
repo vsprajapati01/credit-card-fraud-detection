@@ -5,6 +5,11 @@
 ## The problem
 Credit card fraud is rare (< 1% of transactions), which makes it a classic **imbalanced classification** problem: a model that predicts "legitimate" every time looks 99%+ accurate while catching zero fraud. This project tackles that head-on.
 
+## Dataset
+[Credit Card Fraud Detection — Kaggle (ULB Machine Learning Group)](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud): 284,807 European card transactions (Sept 2013), only 492 fraudulent (0.17%). Features V1–V28 are PCA-anonymized; `Time`, `Amount`, `Class` are raw.
+
+> The CSV is ~143 MB — too large for GitHub, so it's intentionally **not** in this repo (see `.gitignore`). Download it free from Kaggle and place `creditcard.csv` in the project folder to run the pipeline.
+
 ## Methodology
 1. **EDA** — transaction patterns, class distribution, feature correlations, amount/time analysis
 2. **Preprocessing** — `StandardScaler` on Amount/Time, PCA-anonymized features kept as-is, `Pipeline`-based workflow
