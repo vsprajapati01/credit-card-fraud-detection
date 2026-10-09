@@ -58,7 +58,7 @@ print(f'NumPy   : {np.__version__}')
 # uploaded = files.upload()
 
 # Option 2: Load from path
-df = pd.read_csv('creditcard.xls')
+df = pd.read_csv('creditcard.csv')
 
 print('=' * 55)
 print('DATASET OVERVIEW')
